@@ -1,0 +1,180 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e3e1d6;
+    color: #041336;
+}
+
+/* Header */
+header {
+    background-color: #094581;
+    color: rgb(221, 118, 34);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: rgb(230, 231, 229);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('Jagatfarm.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(7, 4, 75);
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #E74C3C;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.cta-btn:hover {
+    background-color: #C0392B;
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Shops Section */
+.shops .shop-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shops .shop {
+    background-color: white;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shops .shop img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.shops .shop h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.shops .shop p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Contact Section */
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    background-color: #2C3E50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.contact form button:hover {
+    background-color: #34495E;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
