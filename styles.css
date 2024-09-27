@@ -28,7 +28,9 @@ h1, h2, h3 {
 
 /* Navbar */
 header {
-    background: #333;
+    text-shadow: 10px 2px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif;
+    background: #df770f;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -95,9 +97,11 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    animation: fadeIn 1s ease-in;
 }
 
 .place {
+
     background: #f9f9f9;
     padding: 15px;
     margin: 10px;
@@ -118,11 +122,19 @@ nav ul li a:hover {
     background: #ececec;
     padding: 20px;
 }
-
-.gallery-images {
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .gallery-images {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    animation-name:fadeIn 2s ease-in-out forwards;
 }
 
 .gallery-images img {
@@ -130,6 +142,8 @@ nav ul li a:hover {
     margin: 10px 0;
     height: auto;
     border-radius: 8px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
 }
 
 /* Lazy Load Image Class */
