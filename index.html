@@ -28,7 +28,7 @@
     <!-- Home Section -->
     <section id="home">
         <div class="container">
-            <h2>Welcome to Greater Noida</h2>
+            <marquee><h2>Welcome to Greater Noida</h2></marquee>
             <p>Discover the charm, modern attractions, and beautiful surroundings of Greater Noida. From parks to historical sites, there's something for everyone!</p>
         </div>
     </section>
@@ -54,6 +54,14 @@
                     <h3>City Park</h3>
                     <p>A beautifully landscaped park ideal for picnics, walks, and relaxation.</p>
                 </div>
+                <div class="place">
+                    <h3>The Grand Venice Mall</h3>
+                    <p>Shopping mall featuring Venetian-style architecture,canals & gondola rides & an ample food court.</p>
+                </div>
+                <div class="place">
+                    <h3>Jagat Farm</h3>
+                    <p>It is a marketplace in southmost Gamma 1 & It is also one of the busiest marketplaces in Greater Noida.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -63,10 +71,12 @@
         <div class="container">
             <h2>Gallery</h2>
             <div class="gallery-images">
-                <img data-src="expomark.jpeg" alt="India Expo Mart" class="lazy-load">
+                <img data-src="expomart.jpeg" alt="India Expo Mart" class="lazy-load">
                 <img data-src="buddh international circuit.jpg" alt="Buddh International Circuit" class="lazy-load">
                 <img data-src="surajpur.jpg" alt="Surajpur Bird Sanctuary" class="lazy-load">
                 <img data-src="citypark.jpg" alt="City Park" class="lazy-load">
+                <img data-src="Venicemall.jpg" alt="The Grand Venice Mall" class="lazy-load">
+                <img data-src="Jagatfarm.jpg" alt="The Grand Venice Mall" class="lazy-load">
             </div>
         </div>
     </section>
@@ -84,13 +94,33 @@
     <section id="contact">
         <div class="container">
             <h2>Contact Us</h2>
-            <form action="submit_form.php" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
+            <form onsubmit="sendEmail();reset(); return false;" action="submit_form.php" method="post">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
         </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+function sendEmail(){
+    Email.send({
+    Host : "smtp.gmail.com",
+    Username : "developersingh69@gmail.com",
+    Password : "Developer@6969",
+    To : 'singhabhitendrapratap@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form Enquiry",
+    Body : "Name: " + document.getElementById("name").value
+    + "<br> Email: " + document.getElementById("email").value
+    + "<br> Message: " + document.getElementById("message").value
+}).then(
+  message => alert("Message Sent Successfully")
+);
+
+}
+
+        </script>
     </section>
 
     <!-- Footer -->
