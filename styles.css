@@ -98,17 +98,22 @@ nav ul li a:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     animation: fadeIn 1s ease-in;
+
+   
+
+}
+place-list:hover{
+    transform: translateY(-5px); /* Lift effect on hover */
+
 }
 
 .place {
 
-    background: #f9f9f9;
+    background: #ffffff;
     padding: 15px;
     margin: 10px;
     border: 1px solid #ddd;
-    width: 45%;
-}
-
+    width: 45%;}
 .place h3 {
     margin-bottom: 10px;
 }

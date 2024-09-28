@@ -25,7 +25,7 @@ section {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for the sections */
-    transition: transform 0.2s; /* Animation for hover effect */
+    transition: transform 0.4s; /* Animation for hover effect */
 }
 
 section:hover {
