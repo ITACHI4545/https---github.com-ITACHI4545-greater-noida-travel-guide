@@ -7,6 +7,7 @@
 
 html{
     scroll-behavior: smooth;
+     
 }
 
 body {
@@ -14,6 +15,7 @@ body {
     line-height: 1.6;
     background: #f4f4f4;
     color: #333;
+
 }
 
 h1, h2, h3 {
@@ -24,6 +26,7 @@ h1, h2, h3 {
     width: 80%;
     margin: auto;
     overflow: hidden;
+   
 }
 
 /* Navbar */
@@ -86,11 +89,14 @@ nav ul li a:hover {
 .places {
     background: #fff;
     padding: 20px;
+    background-image: url(greaternoida.jpg);
+    background-size: cover;
 }
 
 .places h2 {
     text-align: center;
     margin-bottom: 20px;
+    
 }
 
 .places-list {
